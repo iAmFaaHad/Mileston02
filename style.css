@@ -8,18 +8,22 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 
 }
-.influnce{
-    padding-left: 2%;
-}
-
+ /* header-part */
 .Ups{
     width: 100%;
-    
 }
+.influnce{
+    padding-left: 2%;
+    font-size: 30px;
+}
+header{
+    display: flex;
+    width: 90%;
+justify-content: space-between;
+margin-right: 10px;}
+/* main part*/
 main{
     width: 100%;
-    
-    
 }
 h1{
     font-size: 3em;
@@ -34,9 +38,7 @@ h1{
     font-size: 20px;
     color: whitesmoke;
 }
-.influnce{
-    font-size: 30px;
-}
+/* navigation */
 nav li{  list-style: none;}
 nav li a{
 text-decoration: none;
@@ -51,11 +53,7 @@ nav ul li{
     margin-left: 15px;
     margin-top: 8px; 
 }
-header{
-    display: flex;
-    width: 90%;
-justify-content: space-between;
-margin-right: 10px;}
+/* intro-section */
 .starting-one{
     display: flex;
     margin-top: 70px;
@@ -66,9 +64,8 @@ margin-right: 10px;}
     width: 60%;
     margin-right: 15px;
     padding-right: 10%;
+    margin-top: 10%;
     
-}
-
 }
 .old-camera img{
     width: 400px;
@@ -79,17 +76,16 @@ margin-right: 10px;}
 .old-camera:hover .big{
 transform: scale(1.25);
 }
+/* logo-multi-company */
 .logos{
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 }
 .logo img{
     margin-right: 25px ;
-
 }
+/* grids-items */
 .collections{
     margin-top: 8%;
 }
@@ -103,7 +99,6 @@ width: 60%;
     border: 2px hidden cornsilk;
     padding-left: 10px;
     box-shadow: 5px 5px 5px #77f9fd;
-
 }
 .product .thumbnail img{
     width: 99.7%;
@@ -143,22 +138,19 @@ color: gold;
     grid-template-columns: repeat(3, .8fr);
     grid-row-gap: 45px;
     margin-left: 10%;
-    
 }
+/* free-course */
 .course{
     display: flex;
     margin-bottom: 10%;
     margin-top: 10%;
-    margin-right: 5%;
-    
+    margin-right: 5%;  
 }
 .course-banner img{
     width: 90%;
-
 }
 .course-info{
     width: 69%;
-
 }
 .button{
     margin-top: 3%;
@@ -172,6 +164,8 @@ color: gold;
     font-size: 20px;
     color: whitesmoke;
 }
+/* footer */
+
 footer{
     text-align: center;
    color: whitesmoke;
@@ -179,8 +173,8 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
     width: 100%;
-
 }
+/* media-quary for mobile*/
 @media only screen and (max-width:688px )  {
    nav  ul{
         flex-direction: column;
@@ -188,19 +182,28 @@ footer{
     }
     header{
         padding-left: 0%;
+        flex-direction: column;
     }
     .Header-One{
         font-size: 2.5em;
         margin-top:10%;
     }
     .influnce{
-        padding-left: 1%;
+        padding-left: .5%;
+        text-align: center;
+        padding-bottom: 10%;
     }
     .starting-one{
         flex-direction: column-reverse;
         align-items: center;
         column-gap: 20%;
         margin-left: 0%;
+        margin-top: 0%;
+    }
+    .journey-start{
+        margin-top: 10%;
+        margin-right: 0%;
+        padding-right: 0%;
     }
     ul{
         flex-direction: column;
@@ -209,6 +212,10 @@ footer{
     .old-camera{
         align-items: center;
     
+    }
+    .old-camera img{
+        width: 300px;
+        height: 300px;
       margin-top: 20%;
       margin-bottom: 20%;
     }
@@ -218,7 +225,7 @@ footer{
     }
     .products{
         grid-template-columns: repeat(1, 1fr);
-     margin-left: 15%;
+     margin-left: 0%;
     }
     .product{
         padding-left: 10%;
@@ -234,18 +241,24 @@ footer{
         flex-direction: column;
     }
     .course-banner{
-        margin-right: 5%;
+        margin-right: 0%;
         margin-bottom: 10%;
     
     }
+    .course{
+        margin-right: 0%;
+
+    }
     .course-info{
         margin-left: 10%;
-        
     }
     footer{
         width: 100%;
+        padding-bottom: 15px;
     }
 }
+/* media-quary-for-tab */
+
 @media only screen and (min-width:688px) and (max-width:992px ) {
     header{
         padding-left: 0%;
@@ -259,7 +272,7 @@ footer{
         padding-bottom: 10%;
     }
     .influnce{
-        padding-left: 2%;
+        padding-left: 0%;
     }
     .Reduce{
         font-size: 5px;
@@ -272,7 +285,7 @@ footer{
             padding-top: 20%;
         }
     .Header-One{
-    margin-right: 8%;
+    margin-right: 0%;
     }
     
     .course{
@@ -280,9 +293,11 @@ footer{
     margin-left: 10%;}
 
         .course-banner img{ width: 80%;
-            
+        
 }
-
+.starting-one{
+    margin-left: 0%;
+}
 .button {
     text-align: center;
 }
