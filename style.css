@@ -1,17 +1,20 @@
 /* css style start */
 /* it's header portion */
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
-    margin: 0%;
+
 }
 .Ups{
-    width: 90%;
-    padding-left: 80px;
-    padding-right: 10px;
+    width: 100%;
+    
 }
 main{
-    width: 90%;
-    padding-left: 80px;
+    width: 100%;
+    
     
 }
 h1{
@@ -43,13 +46,14 @@ nav ul li{
 header{
     display: flex;
     width: 90%;
-padding-left: 50px;
+
 justify-content: space-between;
 margin-right: 10px;}
 .starting-one{
     display: flex;
     margin-top: 70px;
     margin-bottom: 80px;
+    margin-left: 5%;
 }
 .journey-start{
     width: 60%;
@@ -59,7 +63,7 @@ margin-right: 10px;}
 .old-camera img{
     width: 400px;
     height: 400px;
-    margin-left: 30px;
+    
 }
 .old-camera:hover .big{
 transform: scale(1.25);
@@ -94,6 +98,22 @@ width: 60%;
     width: 99.7%;
     height: 99.7%;
 }
+.Heart{
+ float: right;
+ margin-right: 5%;
+  color: red;
+  font-size: 80%;
+}
+.search{
+    color: tomato;
+}
+.Shopping{
+float: right;
+ margin-right: 5%;
+padding-bottom: 6%;
+margin-bottom: 1%;
+color: steelblue;
+}
 .rating-point{
     display: flex;
     align-items: center;
@@ -111,18 +131,23 @@ color: gold;
     display: grid;
     grid-template-columns: repeat(3, .8fr);
     grid-row-gap: 45px;
+    margin-left: 10%;
     
 }
 .course{
     display: flex;
     margin-bottom: 10%;
     margin-top: 10%;
+    margin-right: 5%;
+    
 }
 .course-banner img{
     width: 90%;
+
 }
 .course-info{
     width: 69%;
+
 }
 .button{
     margin-top: 3%;
@@ -141,17 +166,18 @@ footer{
    color: whitesmoke;
     background-color: rgb(2, 29, 31);
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 10px;
     width: 100%;
-    height: 0%;
+
 }
 @media only screen and (max-width:688px )  {
-    body{
-        width: 100%;
+    header{
+        padding-left: 0%;
     }
     .starting-one{
         flex-direction: column-reverse;
         align-items: center;
+        column-gap: 20%;
     }
     ul{
         flex-direction: column;
@@ -159,6 +185,9 @@ footer{
     }
     .old-camera{
         align-items: center;
+    
+      margin-top: 20%;
+      margin-bottom: 20%;
     }
     .logos{
         align-items: center;
@@ -183,20 +212,56 @@ footer{
     }
     .course-banner{
         margin-right: 5%;
+        margin-bottom: 10%;
+    
     }
     .course-info{
         margin-left: 10%;
+        
+    }
+    footer{
+        width: 100%;
     }
 }
 @media only screen and (min-width:688px) and (max-width:992px ) {
+    header{
+        padding-left: 0%;
+        margin-right: 0%;
+    }
+   
+    .course-banner{
+        padding-bottom: 10%;
+    }
+    .Reduce{
+        font-size: 5px;
+    }
     .products{
         grid-template-columns: repeat(2, 1fr);
-        margin-left: 5%;}
+        margin-left: 10%;}
+        .starting-one{
+            flex-direction: column-reverse;
+            align-items: center;
+            margin-left: 0%;
+        }
+        .journey-start{
+            padding-top: 20%;
+        }
     .Header-One{
     margin-right: 8%;
     }
+    
     .course{
-        flex-direction: column;}
+        flex-direction: column;
+    margin-left: 10%;}
+
         .course-banner img{ width: 80%;
+            
+}
+
+.Left {
+    float: center;
+}
+footer{
+    width: 100%;
 }
 }
