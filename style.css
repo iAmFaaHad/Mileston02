@@ -1,0 +1,202 @@
+/* css style start */
+/* it's header portion */
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0%;
+}
+.Ups{
+    width: 90%;
+    padding-left: 80px;
+    padding-right: 10px;
+}
+main{
+    width: 90%;
+    padding-left: 80px;
+    
+}
+h1{
+    font-size: 3em;
+}
+.Desire-one{
+    background-color: rgb(184, 49, 25);
+    border-radius: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+.influnce{
+    font-size: 30px;
+}
+nav li{  list-style: none;}
+nav li a{
+text-decoration: none;
+color: black;
+font-size: 30px;
+}
+nav ul{
+   display: flex;
+}
+nav ul li{
+    margin-left: 15px;
+    margin-top: 8px;
+    
+}
+header{
+    display: flex;
+    width: 90%;
+padding-left: 50px;
+justify-content: space-between;
+margin-right: 10px;}
+.starting-one{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 80px;
+}
+.journey-start{
+    width: 60%;
+    margin-right: 15px;
+    padding-right: 10%;
+}
+.old-camera img{
+    width: 400px;
+    height: 400px;
+    margin-left: 30px;
+}
+.old-camera:hover .big{
+transform: scale(1.25);
+}
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.logo img{
+    margin-right: 25px ;
+
+}
+.collections{
+    margin-top: 8%;
+}
+.Header-One{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.product{
+    border-radius: 5px;
+width: 60%;
+    border: 2px hidden cornsilk;
+    padding-left: 10px;
+    box-shadow: 5px 5px 5px #77f9fd;
+
+}
+.product .thumbnail img{
+    width: 99.7%;
+    height: 99.7%;
+}
+.rating-point{
+    display: flex;
+    align-items: center;
+}
+.point{
+    margin-left: 15px;
+}
+.fa-star.fill{
+    color: gold;
+}
+.fa-star-half-alt.fill{
+color: gold;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, .8fr);
+    grid-row-gap: 45px;
+    
+}
+.course{
+    display: flex;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+.course-banner img{
+    width: 90%;
+}
+.course-info{
+    width: 69%;
+}
+.button{
+    margin-top: 3%;
+    width: 88%;
+    text-align: right;
+    margin-bottom: 10%;
+}
+.Ex-button{
+    background-color: rgb(184, 49, 25);
+    border-radius: 10px;
+    font-size: 20px;
+    color: whitesmoke;
+}
+footer{
+    text-align: center;
+   color: whitesmoke;
+    background-color: rgb(2, 29, 31);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    width: 100%;
+    height: 0%;
+}
+@media only screen and (max-width:688px )  {
+    body{
+        width: 100%;
+    }
+    .starting-one{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .old-camera{
+        align-items: center;
+    }
+    .logos{
+        align-items: center;
+        margin-left: 20%;
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+     margin-left: 15%;
+    }
+    .product{
+        padding-left: 10%;
+    }
+    .Ex-button{
+        margin-right: 25%;
+    }
+    .button{
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .course{
+        flex-direction: column;
+    }
+    .course-banner{
+        margin-right: 5%;
+    }
+    .course-info{
+        margin-left: 10%;
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px ) {
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5%;}
+    .Header-One{
+    margin-right: 8%;
+    }
+    .course{
+        flex-direction: column;}
+        .course-banner img{ width: 80%;
+}
+}
