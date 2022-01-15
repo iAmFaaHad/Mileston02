@@ -8,6 +8,10 @@ body{
     font-family: 'Source Sans Pro', sans-serif;
 
 }
+.influnce{
+    padding-left: 2%;
+}
+
 .Ups{
     width: 100%;
     
@@ -19,6 +23,10 @@ main{
 }
 h1{
     font-size: 3em;
+}
+.para-pad{
+    padding-top: 5%;
+    font: 20px;
 }
 .Desire-one{
     background-color: rgb(184, 49, 25);
@@ -37,16 +45,15 @@ font-size: 30px;
 }
 nav ul{
    display: flex;
+   flex-direction: row;
 }
 nav ul li{
     margin-left: 15px;
-    margin-top: 8px;
-    
+    margin-top: 8px; 
 }
 header{
     display: flex;
     width: 90%;
-
 justify-content: space-between;
 margin-right: 10px;}
 .starting-one{
@@ -59,11 +66,15 @@ margin-right: 10px;}
     width: 60%;
     margin-right: 15px;
     padding-right: 10%;
+    
+}
+
 }
 .old-camera img{
     width: 400px;
     height: 400px;
-    
+    margin-top: 20%;
+
 }
 .old-camera:hover .big{
 transform: scale(1.25);
@@ -171,13 +182,25 @@ footer{
 
 }
 @media only screen and (max-width:688px )  {
+   nav  ul{
+        flex-direction: column;
+        
+    }
     header{
         padding-left: 0%;
+    }
+    .Header-One{
+        font-size: 2.5em;
+        margin-top:10%;
+    }
+    .influnce{
+        padding-left: 1%;
     }
     .starting-one{
         flex-direction: column-reverse;
         align-items: center;
         column-gap: 20%;
+        margin-left: 0%;
     }
     ul{
         flex-direction: column;
@@ -228,9 +251,15 @@ footer{
         padding-left: 0%;
         margin-right: 0%;
     }
-   
+    .old-camera{
+        margin-top: 3%;
+        padding-top: 10%;
+    }
     .course-banner{
         padding-bottom: 10%;
+    }
+    .influnce{
+        padding-left: 2%;
     }
     .Reduce{
         font-size: 5px;
@@ -238,11 +267,7 @@ footer{
     .products{
         grid-template-columns: repeat(2, 1fr);
         margin-left: 10%;}
-        .starting-one{
-            flex-direction: column-reverse;
-            align-items: center;
-            margin-left: 0%;
-        }
+       
         .journey-start{
             padding-top: 20%;
         }
@@ -258,8 +283,11 @@ footer{
             
 }
 
-.Left {
-    float: center;
+.button {
+    text-align: center;
+}
+.Left{
+    margin-right: 45%;
 }
 footer{
     width: 100%;
